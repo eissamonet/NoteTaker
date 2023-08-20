@@ -1,21 +1,21 @@
 const express = require('express');
 const path = require('path');
-const index = require('./routes/index.js')
-const notes = require('./routes/notes.js');
+const htmlRoutes = require('./routes/htmlRoutes.js')
+const apiRoutes = require('./routes/apiRoutes.js');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
 
-//parse incoming string
+//parse url encoded and json
 app.use(express.urlencoded({ extended: true }));
-
-// Middleware for parsing JSON and urlencoded form data
 app.use(express.json());
-app.use('/api', index);
-app.use('/', notes);
+
+//use routes
+app.use('/api', apiRoutes);
+app.use('/', htmlRoutes);
 
 app.use(express.static('public'));
 
 app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
+  console.log(`API server now on port ${PORT}`)
 );
