@@ -1,5 +1,4 @@
 const router = require('express').Router();
-const { v4: uuidv4 } = require('uuid');
 const path = require('path');
 
 router.get('/', (req, res) => {
