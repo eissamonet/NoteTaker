@@ -38,9 +38,10 @@ GIVEN a note-taking application
 ## Installation
 
 - [Inquirer](https://www.npmjs.com/package/inquirer)
-- A `package.json` with the required dependencies. 
+- A `package.json`
 - [Express.js](https://www.npmjs.com/package/express)
 - [NPM](https://www.npmjs.com/)
+- [Heroku](https://id.heroku.com/login)
 
 ## Usage
 
