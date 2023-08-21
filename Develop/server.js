@@ -1,14 +1,14 @@
 const express = require('express');
 const path = require('path');
-const { clog } = require('./middleware/clog');
-const htmlRoutes = require('./routes/htmlRoutes.js')
-const apiRoutes = require('./routes/apiRoutes.js');
+const { clog } = require('./middleware/clog.js');
+const htmlRoutes = require('./routes/index.js')
+const apiRoutes = require('./routes/notes.js');
 
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
 
 const app = express();
 
-// Import custom middleware, "cLog"
+// Import custom middleware, "clog"
 app.use(clog);
 
 
@@ -17,8 +17,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 //use routes
-app.use('/api', apiRoutes);
-app.use('/', htmlRoutes);
+app.use('/api', notes);
+app.use('/', index);
 
 app.use(express.static('public'));
 
