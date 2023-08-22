@@ -47,3 +47,6 @@ GIVEN a note-taking application
 
 This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
+<img width="1440" alt="Screenshot 2023-08-21 at 10 10 10 PM" src="https://github.com/eissamonet/NoteTaker/assets/133728858/74f44721-22d6-4f52-b18b-cfd322dec99b">
+
+
