@@ -4,8 +4,7 @@ const { clog } = require('./middleware/clog.js');
 const index = require('./routes/index.js')
 const notes = require('./routes/notes.js');
 
-const port = process.env.PORT || 3001
-
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
