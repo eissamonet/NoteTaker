@@ -25,7 +25,7 @@ class Store {
         })
     }
 
-    addNotes(note) {
+    addNote(note) {
         const { title, text } = note;
         if (!title || !text) {
             throw new Error("Note 'title' and 'text' cannot be blank");
@@ -39,7 +39,7 @@ class Store {
             .then(() => newNote);
     }
 
-    removeNotes(id) {
+    removeNote(id) {
         return this.getNotes()
             .then(notes => notes.filter(note => note.id !== id))
             .then(filteredNotes => this.write(filteredNotes));
@@ -48,5 +48,3 @@ class Store {
 
 module.exports = new Store();
  
-
-module.exports = new Store()

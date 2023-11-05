@@ -3,7 +3,7 @@ const storeData = require('../db/storeData');
 
 //requesting notes
 router.get('/notes', (req, res) => {
-    storeData.retrieveNotes()
+    storeData.getNotes()
     .then(notes => res.json(notes))
     .catch(err => res.status(500).json(err));
 }); 
