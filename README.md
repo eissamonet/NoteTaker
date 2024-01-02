@@ -11,7 +11,7 @@
 
 
 ## Description
-An application called Note Taker is created for users to write adn save notes. 
+An application called Note Taker is created for users to write and save notes. 
 
 ## User Story
 
@@ -45,7 +45,7 @@ GIVEN a note-taking application
 
 ## Usage
 
-This application will use an Express.js back end and will save and retrieve note data from a JSON file.
+This application will use an Express.js back-end, and will save and retrieve note data from a JSON file. You can use the following link to access the deployed application on Heroku: https://whispering-gorge-77123-04817dde65b0.herokuapp.com/.
 
 <img width="1440" alt="Screenshot 2023-08-21 at 10 10 10 PM" src="https://github.com/eissamonet/NoteTaker/assets/133728858/74f44721-22d6-4f52-b18b-cfd322dec99b">
 
